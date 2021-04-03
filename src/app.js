@@ -6,7 +6,7 @@ const getCurrentWeather = require('./utils/forecast')
 
 // initialize express
 const app = express()
-
+const port = process.env.PORT || 3000
 
 // register public directory for static file rendering
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -100,6 +100,6 @@ app.get('*', (req, res) => {
 })
 
 // starts up the server and listens on the port provided
-app.listen(3000, () => {
-  console.log('server is up on port 3000')
+app.listen(port, () => {
+  console.log('server is up on port' + port)
 })
