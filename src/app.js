@@ -101,5 +101,5 @@ app.get('*', (req, res) => {
 
 // starts up the server and listens on the port provided
 app.listen(port, () => {
-  console.log('server is up on port' + port)
+  console.log('server is up on port ' + port)
 })
